@@ -1,5 +1,5 @@
 import React from "react";
-import heropic from "../assets/heropic.jpg";
+import hero_img from "../assets/hero_img.jpg";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 
@@ -11,12 +11,12 @@ function Home() {
         >
             <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row ">
                 <div className="flex flex-col justify-center h-full">
-                    <h2 className="text-4xl sm:text-7xl font-bold text-white">
-                        I'm a Frontend Developer
+                    <h2 className="mt-20 text-4xl sm:text-7xl font-bold text-white">
+                        I'm a Web Developer
                     </h2>
                     <p className="text-gray-500 py-4 max-w-md">
-                        I design and code beautifully simple things, and I love
-                        what I do.
+                        Creative coder bridging the gap between technology and
+                        human interaction.
                     </p>
                     <div>
                         <Link
@@ -37,9 +37,9 @@ function Home() {
                 </div>
                 <div className="w-[450px]">
                     <img
-                        src={heropic}
+                        src={hero_img}
                         alt="profile_pic"
-                        className="rounded-2xl mx-auto w-2/3 md:w-full"
+                        className="rounded-2xl mx-auto w-2/3 shadow-md duration-300 md:w-full hover:shadow-xl hover:scale-105"
                     />
                 </div>
             </div>

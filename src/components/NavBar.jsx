@@ -29,7 +29,7 @@ function NavBar() {
     ];
 
     return (
-        <div className="flex justify-between items-center w-full h-20 text-white bg-black px-4 fixed">
+        <div className="flex justify-between items-center w-full h-20 text-white bg-black px-4 fixed z-10">
             <div>
                 <h1 className="text-5xl font-signature ml-2">Raviraj</h1>
             </div>
@@ -62,7 +62,7 @@ function NavBar() {
                     {links.map(({ link, id }) => (
                         <li
                             key={id}
-                            className="px-4 cursor-pointer capitalize py-6"
+                            className="px-4 cursor-pointer capitalize py-6 hover:scale-105 duration-200"
                         >
                             <Link
                                 onClick={() => setNav(!nav)}

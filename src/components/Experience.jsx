@@ -7,9 +7,9 @@ import react_img from "../assets/react_img.jpg";
 import mysql_img from "../assets/mysql_img.png";
 import tailwind_img from "../assets/tailwind_img.jpg";
 import github_img from "../assets/github_img.jpg";
+import python_img from "../assets/python_img.jpg";
 
 function Experience() {
-
     const techs = [
         {
             id: 1,
@@ -27,41 +27,48 @@ function Experience() {
         },
         {
             id: 3,
+            src: python_img,
+            alt: "python_img",
+            title: "Python",
+            style: "shadow-blue-800",
+        },
+        {
+            id: 4,
             src: html_img,
             alt: "html_img",
             title: "HTML",
             style: "shadow-orange-500",
         },
         {
-            id: 4,
+            id: 5,
             src: css_img,
             alt: "css_img",
             title: "CSS",
             style: "shadow-blue-600",
         },
         {
-            id: 5,
+            id: 6,
             src: react_img,
             alt: "react_img",
             title: "React JS",
             style: "shadow-blue-600",
         },
         {
-            id: 6,
+            id: 7,
             src: mysql_img,
             alt: "mysql_img",
             title: "MySQL",
             style: "shadow-orange-800",
         },
         {
-            id: 7,
+            id: 8,
             src: tailwind_img,
             alt: "tailwind_img",
             title: "Tailwind CSS",
             style: "shadow-sky-400",
         },
         {
-            id: 8,
+            id: 9,
             src: github_img,
             alt: "github_img",
             title: "GitHub",
@@ -70,7 +77,9 @@ function Experience() {
     ];
 
     return (
-        <div name="experience" className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+        <div
+            name="experience"
+            className="bg-gradient-to-b from-gray-800 to-black w-full h-full"
         >
             <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
                 <div>
@@ -84,13 +93,16 @@ function Experience() {
 
                 <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-2 sm:px-0">
                     {techs.map(({ id, src, alt, title, style }) => (
-                        <div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
+                        <div
+                            key={id}
+                            className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+                        >
                             <img
                                 src={src}
                                 alt={alt}
-                                className="w-[300px] mx-auto rounded-md"
+                                className="w-full mx-auto rounded-md"
                             />
-                            <p className="mt-4">{title}L</p>
+                            <p className="mt-4">{title}</p>
                         </div>
                     ))}
                 </div>
