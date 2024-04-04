@@ -45,7 +45,7 @@ function SocialLinks() {
                     <HiOutlineMail size={30} />
                 </>
             ),
-            href: "mailto:foo@gmail.com",
+            href: "mailto:ravirajk545@gmail.com",
         },
         {
             id: 5,
