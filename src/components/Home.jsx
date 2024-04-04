@@ -35,12 +35,15 @@ function Home() {
                         </Link>
                     </div>
                 </div>
-                <div className="w-[450px]">
+                <div className="w-[450px] mt-6 rounded-2xl shadow-md lg:hover:shadow-cyan-800 duration-300 lg:hover:scale-105">
                     <img
                         src={hero_img}
                         alt="profile_pic"
-                        className="rounded-2xl mx-auto w-2/3 shadow-md duration-300 md:w-full hover:shadow-xl hover:scale-105"
+                        className="rounded-2xl mx-auto w-2/3 md:w-full"
                     />
+                    <h1 className="my-6 text-5xl font-signature ml-2 text-white text-center">
+                        Raviraj Kumar
+                    </h1>
                 </div>
             </div>
         </div>

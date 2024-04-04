@@ -2,6 +2,9 @@ import React from "react";
 import Todo from "../assets/Todo.jpg";
 import password from "../assets/password.jpg";
 import weather from "../assets/weather.jpg";
+import spotify from "../assets/spotify.png";
+import blogging from "../assets/blogging.png";
+import virat from "../assets/virat.png";
 
 function Portfolio() {
     const portfolios = [
@@ -25,19 +28,19 @@ function Portfolio() {
         },
         {
             id: 4,
-            src: Todo,
+            src: spotify,
             name: "Spotify Clone",
             link: "https://github.com/RavirajKumarTiwari/Spotify-Clone",
         },
         {
             id: 5,
-            src: Todo,
+            src: blogging,
             name: "Blogging Website",
             link: "https://github.com/RavirajKumarTiwari/Blog",
         },
         {
             id: 6,
-            src: Todo,
+            src: virat,
             name: "Kohli Analysis",
             link: "https://github.com/RavirajKumarTiwari/Kohli-Analysis",
         },

@@ -1,13 +1,15 @@
 import React from "react";
 import c_img from "../assets/c_img.png";
-import css_img from "../assets/css_img.jpg";
-import html_img from "../assets/html_img.jpg";
-import js_img from "../assets/js_img.png";
-import react_img from "../assets/react_img.jpg";
+import css_img from "../assets/css_img.png";
+import html_img from "../assets/html_img.png";
+import react_img from "../assets/react_img.png";
 import mysql_img from "../assets/mysql_img.png";
-import tailwind_img from "../assets/tailwind_img.jpg";
-import github_img from "../assets/github_img.jpg";
-import python_img from "../assets/python_img.jpg";
+import tailwind_img from "../assets/tailwind_img.png";
+import github_img from "../assets/github_img.png";
+import python_img from "../assets/python_img.png";
+import jsvascript_icon from "../assets/javascript_icon.png";
+import git_img from "../assets/git_img.png";
+import postman_img from "../assets/postman_img.png";
 
 function Experience() {
     const techs = [
@@ -20,7 +22,7 @@ function Experience() {
         },
         {
             id: 2,
-            src: js_img,
+            src: jsvascript_icon,
             alt: "js_img",
             title: "JavaScript",
             style: "shadow-yellow-500",
@@ -58,7 +60,7 @@ function Experience() {
             src: mysql_img,
             alt: "mysql_img",
             title: "MySQL",
-            style: "shadow-orange-800",
+            style: "shadow-green-800",
         },
         {
             id: 8,
@@ -69,10 +71,24 @@ function Experience() {
         },
         {
             id: 9,
+            src: git_img,
+            alt: "git_img",
+            title: "Git",
+            style: "shadow-orange-500",
+        },
+        {
+            id: 11,
+            src: postman_img,
+            alt: "postman_img",
+            title: "Postman",
+            style: "shadow-orange-400",
+        },
+        {
+            id: 10,
             src: github_img,
             alt: "github_img",
             title: "GitHub",
-            style: "shadow-gray-400",
+            style: "shadow-gray-600",
         },
     ];
 
@@ -87,7 +103,7 @@ function Experience() {
                         Experience
                     </p>
                     <p className="py-6">
-                        These are the technologies I've worked with
+                        These are the technologies & tools I've worked with
                     </p>
                 </div>
 
@@ -100,7 +116,7 @@ function Experience() {
                             <img
                                 src={src}
                                 alt={alt}
-                                className="w-full mx-auto rounded-md"
+                                className="h-40 w-40 mx-auto rounded-md"
                             />
                             <p className="mt-4">{title}</p>
                         </div>
