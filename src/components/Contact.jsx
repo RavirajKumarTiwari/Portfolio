@@ -4,47 +4,81 @@ function Contact() {
     return (
         <div
             name="contact"
-            className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
+            className="w-full py-28 bg-gradient-to-b from-slate-100 via-white to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950"
         >
-            <div className=" flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
-                <div className="pb-8">
-                    <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-                        Contact
-                    </p>
-                    <p className="py-6">
-                        Submit the form below to get in touch with me
+            <div className="max-w-4xl mx-auto px-6">
+                <div className="text-center mb-12">
+                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight inline bg-clip-text text-transparent bg-gradient-to-r from-slate-800 via-slate-600 to-cyan-600 dark:from-slate-100 dark:via-slate-400 dark:to-cyan-400">
+                        Get In Touch
+                    </h2>
+                    <p className="mt-4 text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
+                        Have a question, idea or opportunity? Drop a message and
+                        I'll get back soon.
                     </p>
                 </div>
-
-                <div className="flex justify-center items-center">
-                    <form
-                        action="https://getform.io/f/pbmqkedb"
-                        method="POST"
-                        className="flex flex-col w-full md:w1/2"
-                    >
-                        <input
-                            type="text"
-                            name="name"
-                            placeholder="Enter your name"
-                            className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none "
-                        />
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="Enter your email"
-                            className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none "
-                        />
-                        <textarea
-                            name="message"
-                            placeholder="Enter your message"
-                            rows="10"
-                            className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-                        ></textarea>
-                        <button className="bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md text-white hover:scale-110 duration-300">
-                            Let's talk
+                <form
+                    action="https://getform.io/f/pbmqkedb"
+                    method="POST"
+                    className="relative overflow-hidden rounded-3xl bg-white/70 dark:bg-slate-800/60 backdrop-blur-md ring-1 ring-slate-200 dark:ring-slate-700 p-8 md:p-12 shadow-xl"
+                >
+                    <div className="grid gap-6 md:grid-cols-2">
+                        <div className="flex flex-col">
+                            <label
+                                className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+                                htmlFor="name"
+                            >
+                                Name
+                            </label>
+                            <input
+                                id="name"
+                                name="name"
+                                type="text"
+                                required
+                                placeholder="Your full name"
+                                className="rounded-lg border border-slate-300 dark:border-slate-600 bg-white/70 dark:bg-slate-900/50 px-4 py-2.5 text-slate-800 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                            />
+                        </div>
+                        <div className="flex flex-col">
+                            <label
+                                className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+                                htmlFor="email"
+                            >
+                                Email
+                            </label>
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                required
+                                placeholder="you@example.com"
+                                className="rounded-lg border border-slate-300 dark:border-slate-600 bg-white/70 dark:bg-slate-900/50 px-4 py-2.5 text-slate-800 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                            />
+                        </div>
+                        <div className="flex flex-col md:col-span-2">
+                            <label
+                                className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+                                htmlFor="message"
+                            >
+                                Message
+                            </label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                required
+                                placeholder="Tell me a bit about your project or say hi"
+                                className="rounded-lg border border-slate-300 dark:border-slate-600 bg-white/70 dark:bg-slate-900/50 px-4 py-3 text-slate-800 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                            ></textarea>
+                        </div>
+                    </div>
+                    <div className="mt-10 flex justify-center">
+                        <button className="group relative inline-flex items-center gap-2 rounded-full px-8 py-3 font-medium text-white focus-ring">
+                            <span className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 shadow-glow-cyan transition-all group-hover:shadow-lg group-hover:from-cyan-400 group-hover:to-blue-500" />
+                            <span className="relative">Send Message</span>
                         </button>
-                    </form>
-                </div>
+                    </div>
+                    <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-inset ring-slate-900/5" />
+                </form>
             </div>
         </div>
     );
