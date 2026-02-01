@@ -28,7 +28,7 @@ function Home() {
             <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center h-full px-6 gap-14">
                 <div className="flex flex-col justify-center max-w-3xl text-center">
                     <p className="uppercase tracking-[0.3em] text-[10px] font-semibold text-cyan-600/90 dark:text-cyan-400/90 mb-4">
-                        Cloud & Infra Engineer at LTIMindtree
+                        Cloud & Infrastructure Engineer at LTIMindtree
                     </p>
                     <h1 className="text-4xl sm:text-6xl font-extrabold leading-tight brand-gradient-text drop-shadow-sm">
                         Building Scalable Azure Cloud Solutions
@@ -36,15 +36,15 @@ function Home() {
                     {allowAnimation ? (
                         <TypeAnimation
                             sequence={[
-                                "AKS • Serverless (Functions) • Container Platforms",
+                                "Cloud Monitoring & Observability",
                                 1600,
-                                "Infrastructure as Code: Bicep | Terraform | GitOps",
+                                "Performance & Availability Tracking",
                                 1600,
-                                "CI/CD & DevSecOps • Azure DevOps • GitHub Actions",
+                                "Telemetry & Application Insights Analysis",
                                 1600,
-                                "Observability: App Insights • Log Analytics • KQL",
+                                "Cost Awareness & Optimization",
                                 1600,
-                                "Cost Optimization & Well-Architected Framework",
+                                "Root Cause Analysis & Incident Resolution",
                                 1600,
                             ]}
                             speed={50}
@@ -53,19 +53,18 @@ function Home() {
                         />
                     ) : (
                         <p className="text-slate-600 dark:text-slate-400 mt-6 text-base sm:text-lg max-w-xl">
-                            AKS • Serverless • IaC • DevSecOps • Observability •
-                            Cost Optimization
+                            Monitoring • Observability • Performance • Telemetry • Cost Awareness
                         </p>
                     )}
                     <div className="mt-10 flex flex-wrap gap-4 justify-center">
                         <Link
-                            to="portfolio"
+                            to="about"
                             smooth
                             duration={500}
                             className="pill-btn pill-btn-primary motion-soft"
                         >
                             <span className="flex items-center">
-                                View Work{" "}
+                                Learn More{" "}
                                 <MdKeyboardArrowRight
                                     size={22}
                                     className="ml-1 -mr-1 motion-soft"
@@ -114,10 +113,13 @@ function HeroTerminal() {
     }, []);
 
     const fun = [
-        "Compiling dad jokes... done",
-        "Optimizing coffee intake... throttled",
-        "Deploying creativity to production... success",
-        "Evicting unused brain cache... skipped",
+        "Developing web applications...",
+        "Deploying infrastructure...",
+        "Monitoring on cloud systems...",
+        "Monitoring system health... stable",
+        "Analyzing performance metrics... optimized",
+        "Processing telemetry data... complete",
+        "Root cause analysis... resolved",
     ];
     const msg = fun[uptime % fun.length];
 
@@ -133,7 +135,7 @@ function HeroTerminal() {
                 <span>uptime {uptime}s</span>
             </div>
             <pre className="whitespace-pre-wrap text-slate-700 dark:text-slate-300">
-                {`> whoami\n  raviraj (cloud_engineer)\n\n> mission\n  Build reliable, observable & cost-aware Azure platforms.\n\n> status\n  ${msg}\n\n> shortcuts\n  [Enter] deploy  [R] resume  [C] coffee  [Q] quit (disabled)\n`}
+                {`> whoami\n  raviraj (fullstack_engineer)\n\n> focus\n  Development, Deployment and Maintenance of Cloud systems that stay available, observable, & cost-efficient.\n\n> status\n  ${msg}\n\n> work\n  [M] monitoring  [O] observability  [C] cost  [Q] quit\n`}
             </pre>
         </div>
     );

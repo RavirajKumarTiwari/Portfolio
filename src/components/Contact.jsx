@@ -12,8 +12,8 @@ function Contact() {
                         Get In Touch
                     </h2>
                     <p className="mt-4 text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
-                        Have a question, idea or opportunity? Drop a message and
-                        I'll get back soon.
+                        I am open to roles where I can grow as a Cloud, Infrastructure, or Monitoring Engineer.
+                        If you are building reliable systems and value observability, I would be happy to connect.
                     </p>
                 </div>
                 <form

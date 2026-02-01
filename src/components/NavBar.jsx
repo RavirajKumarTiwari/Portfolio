@@ -13,7 +13,6 @@ function NavBar() {
         const sectionIds = [
             "home",
             "about",
-            "portfolio",
             "experience",
             "contact",
         ];
@@ -48,14 +47,10 @@ function NavBar() {
         },
         {
             id: 3,
-            link: "Portfolio",
-        },
-        {
-            id: 4,
             link: "Experience",
         },
         {
-            id: 5,
+            id: 4,
             link: "Contact",
         },
     ];

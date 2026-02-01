@@ -15,70 +15,51 @@ function About() {
                     <div className="md:col-span-2 rounded-3xl p-2 md:p-4">
                         <div className="prose prose-slate dark:prose-invert prose-lg max-w-none leading-relaxed">
                             <p>
-                                Curious about how a single click fans out across
-                                networks, services and UI layers? That systems
-                                curiosity pulled me into engineering—first via
-                                front-end craft, now across cloud infrastructure
-                                and platform reliability.
+                                I am a Cloud & Infrastructure Engineer with hands-on experience in Azure Monitor and Application Insights.
                             </p>
                             <p>
-                                I started at Haldia Institute of Technology
-                                (Electronics & Communication) and expanded into
-                                C/C++, JavaScript and Python—tools that let
-                                ideas become tangible, interactive products.
+                                My daily work involves checking how systems behave in real time. I monitor performance, availability, telemetry data, logs, and costs. When issues happen, I analyze data to find the root cause and help prevent repeat incidents.
                             </p>
                             <p>
-                                Today I'm focused on Azure: codifying
-                                infrastructure (Bicep/Terraform), orchestrating
-                                containers (AKS), enabling serverless patterns,
-                                shaping CI/CD pipelines and enforcing DevSecOps
-                                guardrails.
+                                I also have a background in full-stack development. This helps me understand applications as well as infrastructure, which leads to better monitoring and troubleshooting.
                             </p>
                             <p>
-                                I care about performance budgets,
-                                accessibility-first design and observability
-                                that shortens the feedback loop. Resilience and
-                                user empathy are equal pillars.
-                            </p>
-                            <p>
-                                Open to collaborating on products that blend UX
-                                finesse with sound cloud architecture.
+                                I enjoy working on systems that are reliable, simple, and well understood.
                             </p>
                         </div>
                         <div className="mt-8 flex flex-wrap gap-3">
-                            <span className="badge">Azure</span>
-                            <span className="badge">AKS</span>
-                            <span className="badge">DevSecOps</span>
-                            <span className="badge">IaC</span>
-                            <span className="badge">Terraform</span>
-                            <span className="badge">Bicep</span>
-                            <span className="badge">Monitoring</span>
+                            <span className="badge">Azure Monitor</span>
+                            <span className="badge">Application Insights</span>
+                            <span className="badge">Telemetry</span>
+                            <span className="badge">Observability</span>
                             <span className="badge">Performance</span>
+                            <span className="badge">Availability</span>
+                            <span className="badge">Cost Management</span>
+                            <span className="badge">Root Cause Analysis</span>
                         </div>
                     </div>
                     <div className="space-y-10">
                         <div className="rounded-3xl p-2 md:p-4">
                             <h3 className="font-semibold tracking-wide text-sm text-slate-600 dark:text-slate-300 mb-3 uppercase">
-                                Focus Areas
+                                What I Focus On
                             </h3>
                             <ul className="text-sm leading-relaxed text-slate-600 dark:text-slate-400 list-disc pl-5">
-                                <li>Cloud-native architectures</li>
-                                <li>Scalable CI/CD pipelines</li>
-                                <li>Cost & performance tuning</li>
-                                <li>Security & compliance automation</li>
-                                <li>Observability & SRE practices</li>
+                                <li>Cloud Monitoring & Observability</li>
+                                <li>Performance & Availability</li>
+                                <li>Telemetry & Application Insights</li>
+                                <li>Cost Awareness</li>
+                                <li>Root Cause Analysis</li>
                             </ul>
                         </div>
                         <div className="rounded-3xl p-2 md:p-4">
                             <h3 className="font-semibold tracking-wide text-sm text-slate-600 dark:text-slate-300 mb-3 uppercase">
-                                Principles
+                                How I Work
                             </h3>
                             <ul className="text-sm leading-relaxed text-slate-600 dark:text-slate-400 list-disc pl-5">
-                                <li>Empathy-driven UX & DX</li>
-                                <li>Automate repeatable toil</li>
-                                <li>Fail fast, learn safely</li>
-                                <li>Defense-in-depth mindset</li>
-                                <li>Measure, then optimize</li>
+                                <li>Prefer clarity over complexity</li>
+                                <li>Rely on data, not assumptions</li>
+                                <li>Learn continuously</li>
+                                <li>Improve systems step by step</li>
                             </ul>
                         </div>
                     </div>
